@@ -3,7 +3,8 @@
   <h1>Item List</h1>
   <ul>
     @for (item of items; track item.id) {
-    <!-- アンチパターン -->
+    <!-- コメントアウトを外すと処理が重くなり
+         上部のバーの動きのカクツキを確認できます -->
     <!-- <li>{{ getHeavyCalculation(item.value) }}</li> -->
 
     <!-- 対策済み -->
