@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { HeavyCalculationPipe } from './heavy-calculation.pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [HeavyCalculationPipe],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

@@ -1,8 +1,10 @@
+<div class="bar"></div>
 <div (mousemove)="onMouseMove()">
   <h1>Item List</h1>
   <ul>
     @for (item of items; track item.id) {
-    <li>{{ getHeavyCalculation(item.value) }}</li>
+    <li>{{ item.value | heavyCalculation }}</li>
+    <!-- <li>{{ getHeavyCalculation(item.value) }}</li> -->
     }
   </ul>
 </div>
