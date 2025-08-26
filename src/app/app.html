@@ -3,8 +3,11 @@
   <h1>Item List</h1>
   <ul>
     @for (item of items; track item.id) {
-    <li>{{ item.value | heavyCalculation }}</li>
+    <!-- アンチパターン -->
     <!-- <li>{{ getHeavyCalculation(item.value) }}</li> -->
+
+    <!-- 対策済み -->
+    <li>{{ item.value | heavyCalculation }}</li>
     }
   </ul>
 </div>
