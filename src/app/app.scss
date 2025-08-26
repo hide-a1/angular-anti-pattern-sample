@@ -1,12 +1,11 @@
 .bar {
-  position: relative; /* 'left'を有効にするため */
+  position: relative;
   width: 100px;
   height: 20px;
   background: #3498db;
   border-radius: 4px;
   margin-bottom: 20px;
 
-  /* leftプロパティをアニメーションさせる */
   animation: move-sideways 3s ease-in-out infinite;
 }
 
